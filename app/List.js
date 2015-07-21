@@ -26,9 +26,25 @@ var List = React.createClass({
       }
     };
     var listItems = this.props.items.map(function(item, index, arr){
-      
-    })
+      return (
+        <li className="list-group-item" style={styles.listGroup} key={index}>
+          <span
+            className="glyphicon glyphicon-remove"
+            style={styles.removeItem}
+            onClick={this.props.remove.bind(null, index)}>
+            </span>
+          <span style={styles.todoItem}>
+            {item}
+          </span>
+        </li>
+      )
+    }.bind(this))
     return (
+      <ul style={styles.uList}>
+        {listItems}
+      </ul>
     )
   }
-})
+});
+
+module.exports = List;
