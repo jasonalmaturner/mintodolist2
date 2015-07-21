@@ -1,0 +1,26 @@
+{
+  "name": "mini1-todolist",
+  "version": "0.0.0",
+  "description": "Mini Project 1: Todo List ============",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ReactWeek/mini1-todolist.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ReactWeek/mini1-todolist/issues"
+  },
+  "dependencies": {
+    "react": "~0.13.3"
+  },
+  "devDependencies": {
+    "node-libs-browser": "~0.5.2",
+    "webpack": "~1.10.1",
+    "jsx-loader": "~0.13.2"
+  }
+}
